@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Navigation bar css starts here  */
+.bgColorNav{
+  background-color: rgb(1, 55, 66);
+}
+.textHeading{
+  color: rgb(1, 55, 66);
+  font-weight: 600;
+}
+/* Contact List Section starts here */
+.list-contact{
+  margin: 10px auto;
+  line-height: 60px;
+  width: 80% ;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.list-contact :hover{ 
+  cursor: pointer; 
+  color:rgb(228, 21, 21);
+   
+}
+.contact-pencil{
+  cursor: pointer;
+  float:right;
+  color:black;
+  margin-right: 1em;
+}
+.delete-btn{
+  cursor: pointer;
+  color:rgb(1, 55, 66);
+  float:right;
+}
+.phone-number{
+  font-size: 20px;
+}
+.phone-icon{
+  cursor: pointer;
+  text-indent: 20px;
+  color: green;
+  margin:5px;
+}
+.email-icon{
+  cursor: pointer;
+  text-indent: 30px;
+  color:rgb(7, 98, 63);
+  margin:5px;
+}
+.emailname{
+  font-size: 20px;
+}
+
+/* Add Contact section starts here  */
+.addContact i{
+  color:white;
+}
+.card-style{
+  width:60%;   
+  margin:20px auto; 
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+.card-style .card-header{
+  background-color: rgb(1, 55, 66);
+  color:white;
+  font-weight: 800;
+}
+.card-body .btn:hover{
+  background-color: rgb(1, 55, 66);
+  color:white;
+  font-weight: 800;
+}
+
+/* Edit Contact section starts here  */
+
+.card-style{
+  width:60%;   
+  margin:20px auto; 
+
+}
+.card-style .card-header{
+  background-color: rgb(1, 55, 66);
+  color:white;
+  
+}
+.card-body .btn:hover{
+  background-color: rgb(1, 55, 66);
+  color:white; 
+  font-weight: 800;
+}
