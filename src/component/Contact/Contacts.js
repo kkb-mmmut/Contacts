@@ -1,5 +1,5 @@
-import React, { Component } from 'react'//importing all the necessary files and folders
-import Contact from './Contact'
+import React, { Component } from 'react'
+import Contact from './Contact'//importing all the necessary files and folders
 import { Consumer } from '../context'
 //creating a new class based components of contacts which is basicall contains all the contacts.
 class Contacts extends Component { 
@@ -11,8 +11,7 @@ class Contacts extends Component {
         this.setState({
             contacts: newContact
         })
-    };
-    //retrun the contacts page.
+    };  //retrun the contacts
     render() {
             return(
                 <Consumer>

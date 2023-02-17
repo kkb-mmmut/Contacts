@@ -1,6 +1,8 @@
-import React, { Component } from 'react'//importing the all the imp files and the libraries.
-import Axios from 'axios'; 
-const Context = React.createContext(); //crete a context to manage the states globally .
+import React, { Component } from 'react'
+import axios from 'axios'
+//importing the all the imp files and the libraries.
+const Context = React.createContext();
+//crete a context to manage the states globally .
 const Reducer = (state,action)=>{//create the reducer to fire the action and update the output.
     switch(action.type){
         case 'DELETE_CONTACT':
@@ -39,12 +41,12 @@ export class Provider extends Component{
     }
 //fetch all teh data on rendering the page.
     async componentDidMount(){
-        const res = await Axios.get('http://jsonplaceholder.typicode.com/users') 
+        const res = await axios.get('http://jsonplaceholder.typicode.com/users')
+
         this.setState({contacts: res.data});
-        console.log(res.data);
     }
-    
-//provider provides the states available to all the children
+//provider provides the states available to all the childred
+
     render(){
         return (
             <Context.Provider value={this.state}>

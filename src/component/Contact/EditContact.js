@@ -1,8 +1,9 @@
+//we create edit compoents
 import React, { Component } from 'react'
 import { Consumer } from '../context'
-import Axios from 'axios'
+import axios from 'axios'
 import TextInputGroup from '../layout/TextInputGroup'
-//we create edit compoents
+
 class EditContact extends Component {
     state={
         name: '',
@@ -10,10 +11,10 @@ class EditContact extends Component {
         phone: '',
         errors: {}
     }
-//it fetch the data from api on render the page
+//it fetch the data from api on render the page 
     async componentDidMount(){
         const { id } = this.props.match.params;
-        const res = await Axios.get(`http://jsonplaceholder.typicode.com/users/${id}`);
+        const res = await axios.get(`http://jsonplaceholder.typicode.com/users/${id}`);
         const contact = res.data;
         
         this.setState({
@@ -47,18 +48,17 @@ class EditContact extends Component {
             phone
         } 
         const { id } = this.props.match.params; 
-        const res = await Axios.put(`http://jsonplaceholder.typicode.com/users/${id}`,updContact);
+        const res = await axios.put(`http://jsonplaceholder.typicode.com/users/${id}`,updContact);
 
         dispatch({type:'UPDATE_CONTACT',payload:res.data}); 
-        //Clear State and set to null
+        //Clear State
         this.setState({
             name: '',
             email: '',
             phone: '' 
         }); 
-        this.props.history.push('/Contacts'); 
+        this.props.history.push('/'); 
     } 
-    //retrun the edit contact components.
     render() {
         const {name,email,phone } = this.state;
         return (

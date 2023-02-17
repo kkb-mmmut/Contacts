@@ -6,14 +6,13 @@ import classnames from 'classnames'
 const TextInputGroup=({
     label,
     name,
-    placeholder,
-    type,//input group components and its attributes
+    placeholder,//input group components and its attributes
+    type,
     value,
     onChange,
     error
 }) => {
-    return (
-        // returns the form which provides the input form to the components.
+    return (// returns the form which provides the input form to the components.
     <div className="form-group">
         <label htmlFor={name}>{label}</label>
         <input type={type}
@@ -35,6 +34,7 @@ const TextInputGroup=({
     
 };
 //attribute is defined that all the fields are necessary to be field.
+
 TextInputGroup.prototype={
     label:PropTypes.string.isRequired,
     name:PropTypes.string.isRequired,
