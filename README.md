@@ -26,3 +26,4 @@
   4-Start the project by using "npm start".
 
 ## Happy Hacking !!
+# Contacts
