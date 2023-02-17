@@ -16,9 +16,9 @@ function App() {
       <Navbar/>
       <div className="container">
         <Switch>
-        <Route exact path="/contact" component={Contacts}/>
-          <Route exact path="/contact/add" component={AddContact}/>
-          <Route exact path="/contact/edit/:id" component={EditContact}/> 
+        <Route exact path="/Contacts" component={Contacts}/>
+          <Route exact path="/Contacts/add" component={AddContact}/>
+          <Route exact path="/Contacts/edit/:id" component={EditContact}/> 
         </Switch>
         </div> 
     </div>

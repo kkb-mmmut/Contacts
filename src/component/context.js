@@ -41,7 +41,9 @@ export class Provider extends Component{
     async componentDidMount(){
         const res = await Axios.get('http://jsonplaceholder.typicode.com/users') 
         this.setState({contacts: res.data});
+        console.log(res.data);
     }
+    
 //provider provides the states available to all the children
     render(){
         return (

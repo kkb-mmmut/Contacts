@@ -11,7 +11,7 @@ class Contact extends Component { //creating a new class based components of con
             dispatch({type:'DELETE_CONTACT',payload: id});
     }; 
     render() {
-        //return the single compoenets of the contact 
+        //return the single compoenets of the contact
         const { id,name,email,phone } = this.props.contact; 
         return(
             <Consumer>
@@ -26,7 +26,7 @@ class Contact extends Component { //creating a new class based components of con
                             <i className="fa fa-phone phone-icon"></i>
                             <span className="phone-number">{phone}</span>
                             <i  className="fa fa-times delete-btn" onClick={this.onDelete.bind(this,id,dispatch)}/>
-                            <Link to={`contact/edit/${id}`}>
+                            <Link to={`Contact/edit/${id}`}>
                                 <i className="fa fa-pencil contact-pencil" ></i>
                             </Link>
                             </h4> 

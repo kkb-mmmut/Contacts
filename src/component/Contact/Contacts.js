@@ -12,7 +12,7 @@ class Contacts extends Component {
             contacts: newContact
         })
     };
-    //retruns the contacts container
+    //retrun the contacts page.
     render() {
             return(
                 <Consumer>
