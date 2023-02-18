@@ -51,7 +51,7 @@ class AddContact extends Component {
             phone: '' 
         });
 
-        this.props.history.push('/Contacts');
+        this.props.history.push('/');
 
     }
 

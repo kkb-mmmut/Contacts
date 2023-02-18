@@ -57,7 +57,7 @@ class EditContact extends Component {
             email: '',
             phone: '' 
         }); 
-        this.props.history.push('/Contacts'); 
+        this.props.history.push('/'); 
     } 
     render() {
         const {name,email,phone } = this.state;

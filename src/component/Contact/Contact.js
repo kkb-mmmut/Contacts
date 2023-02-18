@@ -28,7 +28,7 @@ class Contact extends Component {
                             <i className="fa fa-phone phone-icon"></i>
                             <span className="phone-number">{phone}</span>
                             <i  className="fa fa-times delete-btn" onClick={this.onDelete.bind(this,id,dispatch)}/>
-                            <Link to={`Contacts/edit/${id}`}>
+                            <Link to={`contact/edit/${id}`}>
                                 <i className="fa fa-pencil contact-pencil" ></i>
                             </Link>
                             </h4> 
